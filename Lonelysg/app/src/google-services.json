@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "685604784156",
+    "firebase_url": "https://lonely-4a186.firebaseio.com",
+    "project_id": "lonely-4a186",
+    "storage_bucket": "lonely-4a186.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:685604784156:android:b877b0555fc8842770b7d9",
+        "android_client_info": {
+          "package_name": "com.IrisBICS.lonelysg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "685604784156-333e4ehpl5qo75pcucilf5ro5d2u94tu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdxh9CIfHsn3WvjbC5_Xdtbqu7c8gqc6Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "685604784156-333e4ehpl5qo75pcucilf5ro5d2u94tu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
