@@ -1,0 +1,2 @@
+rootProject.name='Lonely.sg'
+include ':app'
