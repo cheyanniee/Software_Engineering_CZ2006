@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="chatView" type="id" />
+    <item name="typeMessage" type="id" />
+    <item name="sendButton" type="id" />
+    <item name="invitationsIcon" type="id" />
+    <item name="constraintLayout" type="id" />
+    <item name="requestsIcon" type="id" />
+</resources>

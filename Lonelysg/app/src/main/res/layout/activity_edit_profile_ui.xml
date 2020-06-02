@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ActivityEditProfile"
+    android:padding="5dp"
+    android:layout_gravity="center"
+    android:background="@drawable/splash_screen">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scrollbarSize="3dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="vertical"
+        android:scrollingCache="true"
+        android:smoothScrollbar="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/editProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="EDIT PROFILE"
+                android:textSize="36sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:background="@color/white"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/user_sample"
+                android:id="@+id/editProfilePic"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"/>
+
+            // For Name
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/darkblue"
+                        android:textSize="20sp"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:hint="Type New Name"
+                        android:id="@+id/editProfileName"
+                        android:textSize="15sp"
+                        android:textColor="#000000"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#D3D3D3"/>
+
+                </LinearLayout>
+
+                // For Gender
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gender"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/darkblue"
+                        android:textSize="20sp"/>
+
+                    <Spinner
+                        android:id="@+id/genderCategoryDropBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="33dp"
+                        android:gravity="center"
+                        android:background="@drawable/rectangleborder"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="4dp"
+                        android:background="#D3D3D3"/>
+
+                </LinearLayout>
+
+                // For Age
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Age"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/darkblue"
+                        android:textSize="20sp"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:hint="Type New Age"
+                        android:id="@+id/editProfileAge"
+                        android:textSize="15sp"
+                        android:textColor="#000000"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="1dp"
+                        android:background="#D3D3D3"/>
+
+                </LinearLayout>
+
+                // For Occupation
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Occupation"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/darkblue"
+                        android:textSize="20sp"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:hint="Type New Occupation"
+                        android:id="@+id/editProfileOccupation"
+                        android:textSize="15sp"
+                        android:textColor="#000000"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="1dp"
+                        android:background="#D3D3D3"/>
+
+                </LinearLayout>
+
+                // For interests
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Interests"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/darkblue"
+                        android:textSize="20sp"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:hint="Type New Interests"
+                        android:id="@+id/editProfileInterests"
+                        android:textSize="15sp"
+                        android:textColor="#000000"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="1dp"
+                        android:background="#D3D3D3"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="250dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/editProfileConfirmButton"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginRight="15dp"
+                    android:textAlignment="center"
+                    android:text="CONFIRM"
+                    android:textColor="@color/black"
+                    android:background="@drawable/borders4"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:layout_width="250dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/editProfileCancelButton"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="15dp"
+                    android:textAlignment="center"
+                    android:text="CANCEL"
+                    android:textColor="@color/black"
+                    android:background="@drawable/borders4"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

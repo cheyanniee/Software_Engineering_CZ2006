@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">lonelySG</string>
+
+    <string-array name="activity_name">
+        <item>Study at Library</item>
+        <item>Eating Mac and Cheese</item>
+    </string-array>
+
+    <string-array name="time_and_date">
+        <item>3pm-6pm 1 April 2020</item>
+        <item>7pm-8pm 2 April 2020</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+
+</resources>
